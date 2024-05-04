@@ -661,3 +661,37 @@ body {
   width: 20px;
   height: 20px;
 }
+
+/* Style pt MODAL */
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+[data-modal] {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+[data-modal-content] {
+  width: 528px;
+  height: 581px;
+  background-color: var(--white);
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  transform: translate(-50% -50%);
+  padding: 20px;
+}
+
+[data-modal-close] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

@@ -32,7 +32,7 @@
       <div class="header__info">
         <a href="tel:+380441111111">+38 044 111 11 11</a>
       </div>
-      <button class="header__booking button" type="button">
+      <button data-modal-open class="header__booking button" type="button">
         Book a Service
       </button>
     </div>
@@ -74,7 +74,7 @@
             wavelength with clients. Therefore, we are always ready to improve
             everyone who comes to us!
           </p>
-          <button class="about__button button">Book a service</button>
+          <button data-modal-open class="about__button button">Book a service</button>
         </div>
       </div>
     </section>
@@ -141,7 +141,7 @@
           </ul>
         </div>
 
-        <button class="services__button button">Book a Service</button>
+        <button data-modal-open class="services__button button">Book a Service</button>
       </div>
     </section>
 
@@ -394,6 +394,18 @@
       </ul>
     </div>
   </footer>
+
+
+  <div data-modal class="is-hidden">
+    <div data-modal-content>
+      <h2>Acesta este un titlu</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet saepe eaque, delectus aliquid obcaecati,
+      </p>
+      <button data-modal-close type="button">X</button>
+    </div>
+  </div>
+
+  <script> src = "./modal.js" </script>
 </body>
 
 </html>
